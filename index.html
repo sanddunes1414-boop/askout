@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>10 Things I Like About You, Sharanya 💖</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,500&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Gaegu:wght@400;700&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -76,6 +77,36 @@ footer{text-align:center;margin-top:50px;font-family:'Fredoka';font-size:16px}
 @keyframes drift{from{transform:translateY(110vh) rotate(0)}to{transform:translateY(-15vh) rotate(360deg)}}
 main,header,footer{position:relative;z-index:1}
 body{position:relative}
+/* newspaper */
+.paper{max-width:640px;margin:10px auto 30px;position:relative;z-index:1;background-color:#f4edd9;color:var(--ink);
+  border:3px solid var(--ink);box-shadow:8px 8px 0 var(--ink);padding:16px 18px 20px;transform:rotate(-1deg);
+  background-image:radial-gradient(rgba(30,15,51,.13) 1px,transparent 1.6px);background-size:6px 6px;
+  font-family:'Playfair Display',Georgia,serif;font-size:16px;line-height:1.35}
+.mast{font-family:'UnifrakturCook','Playfair Display',serif;text-align:center;font-size:clamp(30px,9vw,50px);
+  line-height:1;border-bottom:4px double var(--ink);padding-bottom:8px;margin-top:6px}
+.dateline{display:flex;justify-content:space-between;gap:8px;font-family:'Fredoka';font-weight:600;font-size:11px;
+  border-bottom:2px solid var(--ink);padding:5px 0;text-transform:uppercase;letter-spacing:.06em}
+.hed{font-weight:900;font-size:clamp(24px,7vw,38px);line-height:1.05;margin:14px 0 4px;text-transform:uppercase}
+.deck{font-style:italic;font-weight:500;font-size:17px;margin:0 0 14px}
+.cols{display:grid;grid-template-columns:1fr;gap:18px}
+@media(min-width:560px){.cols{grid-template-columns:1fr 1fr}}
+.refimg{margin:0;position:relative}
+.refimg img,.refimg .ph{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;border:3px solid var(--ink);
+  filter:contrast(1.05) saturate(1.1);background:var(--lemon)}
+.refimg .ph{display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;
+  font-family:'Fredoka';font-size:14px;border-style:dashed}
+.refimg .ph b{font-size:40px}
+.refimg figcaption{font-size:12px;font-style:italic;margin-top:5px;border-top:2px solid var(--ink);padding-top:3px}
+.refimg::before{content:"";position:absolute;top:-12px;left:50%;width:70px;height:22px;transform:translateX(-50%) rotate(3deg);
+  background:rgba(255,126,182,.85);border:2px solid var(--ink);z-index:2}
+.hate h4{font-family:'Fredoka';font-weight:700;font-size:16px;margin:0 0 6px;background:var(--ink);color:#fff3fa;
+  display:inline-block;padding:3px 10px;border-radius:999px;transform:rotate(-2deg)}
+.hate ol{margin:6px 0 0;padding-left:22px;font-size:14.5px}
+.hate li{margin-bottom:5px;padding-left:2px}
+.hate li::marker{font-weight:900;color:#d6247f}
+.fine{font-size:12px;font-style:italic;margin:12px 0 0;border-top:2px solid var(--ink);padding-top:6px;text-align:center}
+.stamp{position:absolute;right:-8px;top:-18px;background:var(--pink);border:3px solid var(--ink);border-radius:999px;
+  padding:3px 14px;font-family:'Fredoka';font-weight:700;font-size:14px;transform:rotate(7deg);box-shadow:3px 3px 0 var(--ink)}
 #decor{position:absolute;top:0;left:0;width:100%;height:100%;overflow:hidden;pointer-events:none;z-index:0}
 #decor svg{position:absolute;transform:rotate(var(--r,0deg));animation:sway 5s ease-in-out infinite;
   filter:drop-shadow(3px 3px 0 rgba(59,31,74,.25))}
@@ -101,6 +132,36 @@ body{position:relative}
   <h1>10 Things<br>I Like<br>About You</h1>
   <p>(okay it’s more than ten. i lost count.) ✿</p>
 </header>
+
+<section class="paper">
+  <div class="stamp">★ EXCLUSIVE ★</div>
+  <div class="mast">The Daily Sharanya</div>
+  <div class="dateline"><span>Vol. 2000 · Y2K Edition</span><span>Special Edition</span><span>Price: one (1) yes</span></div>
+  <h2 class="hed">10 Things I Hate About You*</h2>
+  <p class="deck">Local boy attempts to be mean, fails spectacularly, confesses everything.</p>
+  <div class="cols">
+    <figure class="refimg">
+      <img src="images/ref.jpeg" alt="reference" onerror="this.outerHTML='<div class=ph><b>🗞️</b>add images/ref.jpeg<br>(your reference image)</div>'">
+      <figcaption>Fig. 1 — the inspiration for this entire operation.</figcaption>
+    </figure>
+    <div class="hate">
+      <h4>THE LIST ✎</h4>
+      <ol>
+        <li>Your face announces seventeen emotions before you say a word.</li>
+        <li>Those eyes. Should come with a warning label.</li>
+        <li>The nakhre. (And that it works on me.)</li>
+        <li>Fighting over absolutely nothing.</li>
+        <li>Acting like you have the final say. (You do.)</li>
+        <li>Stubborn at noon, sweetest person by 12:05.</li>
+        <li>That you posted me and I was way too happy about it.</li>
+        <li>Hours together never feel like enough.</li>
+        <li>I forget how to act normal around my friends.</li>
+        <li>I wasted three weeks pretending I didn’t like you.</li>
+      </ol>
+    </div>
+  </div>
+  <p class="fine">*every single one of these is a lie. keep reading ↓</p>
+</section>
 
 <main id="letter"></main>
 
