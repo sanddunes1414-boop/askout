@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>10 Things I Like About You 💖</title>
+<title>10 Things I Like About You, Sharanya 💖</title>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Gaegu:wght@400;700&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -86,7 +86,7 @@ body{position:relative}
 
 <div id="intro">
   <div class="big">💌</div>
-  <h2>hey you ✦</h2>
+  <h2>hey Sharanya ✦</h2>
   <p>i made you something. tap to open it (sound on!) 🎧</p>
   <button class="btn" id="open">open me ♡</button>
 </div>
@@ -97,18 +97,18 @@ body{position:relative}
 <audio id="bg" src="song.mp3" loop preload="auto"></audio>
 
 <header>
-  <div class="sticker">★ a memoir for a very important day ★</div>
+  <div class="sticker">★ for Sharanya · a memoir for a very important day ★</div>
   <h1>10 Things<br>I Like<br>About You</h1>
   <p>(okay it’s more than ten. i lost count.) ✿</p>
 </header>
 
 <main id="letter"></main>
 
-<footer>made with ♡ &nbsp;·&nbsp; scroll back up anytime ✦</footer>
+<footer>made with ♡ for Sharanya &nbsp;·&nbsp; scroll back up anytime ✦</footer>
 
 <script>
 /* ===== EDIT HERE ===== */
-// Photos go in the "images" folder and must be named pic1.jpg ... pic8.jpg
+// Photos go in the "images" folder and must be named pic1.jpeg ... pic8.jpeg
 // Tiny captions under each photo (change or leave empty)
 const captions = ["us ✿","that smile","chaos queen","coffee date?","rainy fest","the eyes 👀","my fav human","you + me ♡"];
 /* ===================== */
@@ -225,13 +225,13 @@ blocks.forEach((t,i)=>{
   root.insertAdjacentHTML('beforeend', `
   <section class="block">
     <div class="polaroid">
-      <img src="images/pic${n}.jpg" alt="photo ${n}" onerror="this.outerHTML='<div class=ph><b>📸</b>add images/pic${n}.jpg</div>'">
+      <img src="images/pic${n}.jpeg" alt="photo ${n}" onerror="this.outerHTML='<div class=ph><b>📸</b>add images/pic${n}.jpeg</div>'">
       <span class="cap">${esc(captions[i]||'')}</span>
     </div>
     <div class="box c${i} ${last?'final':''}">
       <p>${esc(t).replace(/\n/g,'<br>')}</p>
       ${last?`
-      <h3>So, what do you say?<br>Would you let me take you out?<br>Properly, this time. ♡</h3>
+      <h3>So, what do you say, Sharanya?<br>Would you let me take you out?<br>Properly, this time. ♡</h3>
       <div class="btns">
         <button class="btn" id="yes">YES 💖</button>
         <button class="btn" id="no">no</button>
